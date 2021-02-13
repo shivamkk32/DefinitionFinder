@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Description Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+
+  <div class="table-users">
+   <div class="header">Search Result</div>
+<!--
+   <table cellspacing="0">
+      <tr>
+         <th>Brief Description</th>
+         
+      </tr>
+         {% for review in reviews %}
+      <tr>
+	     <td>{{review}}</td>
+          <!--<td>{{review['Product']}}</td> 
+         
+       {% endfor %}
+   </table>-->
+   
+   <h2 style="text-align:center; text-decoration:underline">Brief Description</h2>
+   <p style="padding:2%">{{reviews[0]}}</p>
+   
+</div>
+
+
+
+</body>
+
+</html>
